@@ -16,6 +16,7 @@ export default function Homepage({ foods }: Props) {
   return (
     <>
       <Navbar />
+      <title>Homepage | Plate & Plenty</title>
       <div className="flex flex-col items-center text-center">
         <h1 className="text-4xl mt-10 tracking-[0.5em] font-bold font-[Quicksand]">
           PLATE & PLENTY
@@ -33,6 +34,10 @@ export default function Homepage({ foods }: Props) {
             <FoodCard key={food.id} {...food} />
           ))}
         </div>
+      </div>
+
+      <div>
+          
       </div>
     </>
   );
